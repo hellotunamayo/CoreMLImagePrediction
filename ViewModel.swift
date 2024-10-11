@@ -19,7 +19,7 @@ final class PredictionModel {
     
     init() {
         do {
-            self.model = try NoonBody(configuration: MLModelConfiguration())
+            self.model = try MLModel(configuration: MLModelConfiguration())
         } catch {
             print("Error loading model: \(error)")
         }
